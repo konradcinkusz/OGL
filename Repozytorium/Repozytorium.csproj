@@ -161,9 +161,13 @@
     <Compile Include="Migrations\201712051950385_1.Designer.cs">
       <DependentUpon>201712051950385_1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712052002209_2.cs" />
-    <Compile Include="Migrations\201712052002209_2.Designer.cs">
-      <DependentUpon>201712052002209_2.cs</DependentUpon>
+    <Compile Include="Migrations\201712072037500_2.cs" />
+    <Compile Include="Migrations\201712072037500_2.Designer.cs">
+      <DependentUpon>201712072037500_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712072058186_3.cs" />
+    <Compile Include="Migrations\201712072058186_3.Designer.cs">
+      <DependentUpon>201712072058186_3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Kategoria.cs" />
@@ -181,8 +185,11 @@
     <EmbeddedResource Include="Migrations\201712051950385_1.resx">
       <DependentUpon>201712051950385_1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712052002209_2.resx">
-      <DependentUpon>201712052002209_2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712072037500_2.resx">
+      <DependentUpon>201712072037500_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712072058186_3.resx">
+      <DependentUpon>201712072058186_3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

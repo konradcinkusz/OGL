@@ -54,4 +54,6 @@ C:\Users\Konrad\Documents\Asia\OGL\Repozytorium\bin\System.Web.WebPages.Razor.xm
 C:\Users\Konrad\Documents\Asia\OGL\Repozytorium\obj\Debug\Repozytorium.Migrations.startowa.resources
 C:\Users\Konrad\Documents\Asia\OGL\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.Cache
 C:\Users\Konrad\Documents\Asia\OGL\Repozytorium\obj\Debug\Repozytorium.Migrations._1.resources
+C:\Users\Konrad\Documents\Asia\OGL\Repozytorium\obj\Debug\Repozytorium.csprojResolveAssemblyReference.cache
 C:\Users\Konrad\Documents\Asia\OGL\Repozytorium\obj\Debug\Repozytorium.Migrations._2.resources
+C:\Users\Konrad\Documents\Asia\OGL\Repozytorium\obj\Debug\Repozytorium.Migrations._3.resources
