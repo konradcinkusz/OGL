@@ -157,21 +157,9 @@
     <Compile Include="IRepo\IKategorie.cs" />
     <Compile Include="IRepo\IOglContext.cs" />
     <Compile Include="IRepo\IOgloszenieRepo.cs" />
-    <Compile Include="Migrations\201712051935054_startowa.cs" />
-    <Compile Include="Migrations\201712051935054_startowa.Designer.cs">
-      <DependentUpon>201712051935054_startowa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712051950385_1.cs" />
-    <Compile Include="Migrations\201712051950385_1.Designer.cs">
-      <DependentUpon>201712051950385_1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712072037500_2.cs" />
-    <Compile Include="Migrations\201712072037500_2.Designer.cs">
-      <DependentUpon>201712072037500_2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712072058186_3.cs" />
-    <Compile Include="Migrations\201712072058186_3.Designer.cs">
-      <DependentUpon>201712072058186_3.cs</DependentUpon>
+    <Compile Include="Migrations\201712101429452_11.cs" />
+    <Compile Include="Migrations\201712101429452_11.Designer.cs">
+      <DependentUpon>201712101429452_11.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Kategoria.cs" />
@@ -186,17 +174,8 @@
     <Compile Include="Repo\OgloszenieRepo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712051935054_startowa.resx">
-      <DependentUpon>201712051935054_startowa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712051950385_1.resx">
-      <DependentUpon>201712051950385_1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712072037500_2.resx">
-      <DependentUpon>201712072037500_2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712072058186_3.resx">
-      <DependentUpon>201712072058186_3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712101429452_11.resx">
+      <DependentUpon>201712101429452_11.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

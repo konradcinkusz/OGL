@@ -19,7 +19,7 @@ namespace Repozytorium.Repo
         public IQueryable<Ogloszenie> PobierzOgloszenie()
         {
             _db.Database.Log = message => Trace.WriteLine(message);
-
+            return _db.Ogloszenie;
         }
         public IQueryable<Ogloszenie> PobierzStrone(int? page = 1, int? pageSize = 15)
         {
