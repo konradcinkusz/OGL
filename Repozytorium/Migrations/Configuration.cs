@@ -6,6 +6,7 @@
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
+    using System.Diagnostics;
     using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Repozytorium.Models.OglContext>
@@ -18,8 +19,8 @@
 
         protected override void Seed(Repozytorium.Models.OglContext context)
         {
-            //if (!Debugger.IsAttached)
-            //    Debugger.Launch();
+            if (!Debugger.IsAttached)
+                Debugger.Launch();
             SeedRoles(context);
             SeedUsers(context);
             SeedOgloszenia(context);
@@ -111,6 +112,7 @@
                     OgloszenieId = i /2 + 1,
                     KategoriaId = i / 2 + 2
                 };
+
                 context.Set<Ogloszenie_Kategoria>().AddOrUpdate(okat);
             }
             context.SaveChanges();
