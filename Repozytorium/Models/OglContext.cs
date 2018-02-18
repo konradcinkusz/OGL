@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 using Repozytorium.IRepo;
+using Repozytorium.Model.Dictionaries;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -23,8 +24,7 @@ namespace Repozytorium.Models
         public DbSet<Ogloszenie> Ogloszenie  { get; set; }
         public DbSet<Uzytkownik> Uzytkownik  { get; set; }
         public DbSet<Ogloszenie_Kategoria> Ogloszenie_Kategoria  { get; set; }
-        
-
+        public DbSet<Car> Samochody { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

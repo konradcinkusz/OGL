@@ -371,9 +371,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Repozytorium\Repozytorium.csproj">
+    <ProjectReference Include="..\Repozytorium\Repozytorium.DAL.csproj">
       <Project>{b67f249f-83d1-4659-9ad5-cef991df2908}</Project>
-      <Name>Repozytorium</Name>
+      <Name>Repozytorium.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

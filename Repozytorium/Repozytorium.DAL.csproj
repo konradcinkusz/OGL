@@ -178,6 +178,12 @@
       <DependentUpon>201712101429452_11.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Repozytorium.Model\Repozytorium.Model.csproj">
+      <Project>{1aba4114-76f9-4c94-87d4-980977a72e13}</Project>
+      <Name>Repozytorium.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
