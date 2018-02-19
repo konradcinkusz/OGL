@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D0C05057-118C-427F-98ED-037E23ACE66C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{16CC8121-3D4F-42C1-8808-2A5A144CFF8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Repozytorium.Client</RootNamespace>
-    <AssemblyName>Repozytorium.Client</AssemblyName>
+    <RootNamespace>OGL.IoC</RootNamespace>
+    <AssemblyName>OGL.IoC</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -75,21 +72,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Bootstrap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OGL.IoC\OGL.IoC.csproj">
-      <Project>{16cc8121-3d4f-42c1-8808-2a5a144cff8d}</Project>
-      <Name>OGL.IoC</Name>
+    <ProjectReference Include="..\Repozytorium.Logic\Repozytorium.Logic.csproj">
+      <Project>{D6108A9D-EF50-4F74-B4B0-1326D8F89B45}</Project>
+      <Name>Repozytorium.Logic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OGL.Services\OGL.Services.csproj">
-      <Project>{6aa4d45f-2ea6-4af5-8d27-cdad255c714e}</Project>
-      <Name>OGL.Services</Name>
+    <ProjectReference Include="..\Repozytorium.Model\Repozytorium.Model.csproj">
+      <Project>{1ABA4114-76F9-4C94-87D4-980977A72E13}</Project>
+      <Name>Repozytorium.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

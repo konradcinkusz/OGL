@@ -25,6 +25,7 @@ namespace Repozytorium.Models
         public DbSet<Uzytkownik> Uzytkownik  { get; set; }
         public DbSet<Ogloszenie_Kategoria> Ogloszenie_Kategoria  { get; set; }
         public DbSet<Car> Samochody { get; set; }
+        public DbSet<Fuel> Paliwa { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repozytorium.Model", "Repoz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repozytorium.Logic", "Repozytorium.Logic\Repozytorium.Logic.csproj", "{D6108A9D-EF50-4F74-B4B0-1326D8F89B45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OGL.Services", "OGL.Services\OGL.Services.csproj", "{6AA4D45F-2EA6-4AF5-8D27-CDAD255C714E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OGL.IoC", "OGL.IoC\OGL.IoC.csproj", "{16CC8121-3D4F-42C1-8808-2A5A144CFF8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{D6108A9D-EF50-4F74-B4B0-1326D8F89B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6108A9D-EF50-4F74-B4B0-1326D8F89B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6108A9D-EF50-4F74-B4B0-1326D8F89B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA4D45F-2EA6-4AF5-8D27-CDAD255C714E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA4D45F-2EA6-4AF5-8D27-CDAD255C714E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA4D45F-2EA6-4AF5-8D27-CDAD255C714E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA4D45F-2EA6-4AF5-8D27-CDAD255C714E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16CC8121-3D4F-42C1-8808-2A5A144CFF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CC8121-3D4F-42C1-8808-2A5A144CFF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CC8121-3D4F-42C1-8808-2A5A144CFF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CC8121-3D4F-42C1-8808-2A5A144CFF8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
