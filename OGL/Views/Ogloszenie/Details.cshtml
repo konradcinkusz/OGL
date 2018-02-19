@@ -1,57 +1,50 @@
-﻿@using Microsoft.AspNet.Identity;
-    @model Repozytorium.Models.Ogloszenie
+﻿@model Repozytorium.Models.Ogloszenie
 
-    @{
-        ViewBag.Title = "Dane szczegółowe";
-        ViewBag.Opis = "Opis danych szczegółowych";
-        ViewBag.SlowaKluczowe = "Ogloszenie, " + Model.ID + ", szczegóły";
-    }
+@{
+    ViewBag.Title = "Details";
+}
 
-    <h2>Details</h2>
+<h2>Details</h2>
 
-    <div>
-        <h4>Ogloszenie</h4>
-        <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.Uzytkownik.Email)
-            </dt>
+<div>
+    <h4>Ogloszenie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Uzytkownik.Email)
+        </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.UzytkownikId)
-            </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Uzytkownik.Email)
+        </dd>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.Tresc)
-            </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tresc)
+        </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Tresc)
-            </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Tresc)
+        </dd>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.Tytul)
-            </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tytul)
+        </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Tytul)
-            </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Tytul)
+        </dd>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.DataDodania)
-            </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDodania)
+        </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.DataDodania)
-            </dd>
+        <dd>
+            @Html.DisplayFor(model => model.DataDodania)
+        </dd>
 
-        </dl>
-    </div>
-    <p>
-        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin") || User.IsInRole("Pracownik") || Model.UzytkownikId == User.Identity.GetUserId())
-        {
-            <br />
-            @Html.ActionLink("Edycja", "Edit", new { id = Model.ID }, new { @class = "btn btn-primary" }))
-    }
-        @Html.ActionLink("Powrót do listy", "Index", new { @class = "btn btn-warning" })
-    </p>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
