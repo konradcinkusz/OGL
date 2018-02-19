@@ -61,7 +61,6 @@ namespace OGL
             };
 
             // Configure user lockout defaults
-            ///Po pięcu niepomyślnych logowaniach wyłącza możliwość logowania dla tego konta
             manager.UserLockoutEnabledByDefault = true;
             manager.DefaultAccountLockoutTimeSpan = TimeSpan.FromMinutes(5);
             manager.MaxFailedAccessAttemptsBeforeLockout = 5;
