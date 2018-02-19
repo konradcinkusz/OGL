@@ -165,6 +165,10 @@
     <Compile Include="Migrations\201802181241294_next.Designer.cs">
       <DependentUpon>201802181241294_next.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802190703493_next1.cs" />
+    <Compile Include="Migrations\201802190703493_next1.Designer.cs">
+      <DependentUpon>201802190703493_next1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Kategoria.cs" />
     <Compile Include="Models\OglContext.cs" />
@@ -184,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802181241294_next.resx">
       <DependentUpon>201802181241294_next.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802190703493_next1.resx">
+      <DependentUpon>201802190703493_next1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

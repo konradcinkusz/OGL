@@ -5,17 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repozytorium.Model.Dictionaries
+namespace Repozytorium.Model
 {
-    public class Fuel
+    public class UsedNumber
     {
-        public Fuel()
+        public UsedNumber()
         {
-
+            
         }
-        public string Name { get; set; }
-
         [Display(Name = "Id:")]
         public int ID { get; set; }
+        public int Used { get; set; }
     }
 }

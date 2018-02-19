@@ -2,6 +2,7 @@
 {
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
+    using Model;
     using Models;
     using System;
     using System.Data.Entity;
@@ -26,7 +27,16 @@
             SeedOgloszenia(context);
             SeedKategorie(context);
             SeedOgloszenie_Kategoria(context);
+            SeedUsedNumbers(context);
         }
+
+        private void SeedUsedNumbers(OglContext context)
+        {
+           for(int i=0;i<100;i++)
+                context.Set<UsedNumber>().AddOrUpdate(new UsedNumber { Used = i * 57 });
+            context.SaveChanges();
+        }
+
         private void SeedRoles(OglContext context)
         {
             RoleManager<IdentityRole> roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>());

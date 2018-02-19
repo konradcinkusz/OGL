@@ -37,7 +37,16 @@
       <HintPath>..\packages\Unity.5.6.0\lib\net45\CommonServiceLocator.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -90,6 +99,10 @@
     <ProjectReference Include="..\OGL.Services\OGL.Services.csproj">
       <Project>{6aa4d45f-2ea6-4af5-8d27-cdad255c714e}</Project>
       <Name>OGL.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repozytorium.Logic\Repozytorium.Logic.csproj">
+      <Project>{D6108A9D-EF50-4F74-B4B0-1326D8F89B45}</Project>
+      <Name>Repozytorium.Logic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 using Repozytorium.IRepo;
+using Repozytorium.Model;
 using Repozytorium.Model.Dictionaries;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace Repozytorium.Models
 {
     public class OglContext : IdentityDbContext, IOglContext
     {
-        public OglContext() : base("DefaultConnection")
+        public OglContext() : base("aspnet-OGL")
         { 
 
         }
@@ -26,6 +27,7 @@ namespace Repozytorium.Models
         public DbSet<Ogloszenie_Kategoria> Ogloszenie_Kategoria  { get; set; }
         public DbSet<Car> Samochody { get; set; }
         public DbSet<Fuel> Paliwa { get; set; }
+        public DbSet<UsedNumber> NumeryWykorzystane { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

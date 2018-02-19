@@ -58,10 +58,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IRepository.cs" />
+    <Compile Include="NumberGenerator.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Repozytorium.Model\Repozytorium.Model.csproj">
+      <Project>{1aba4114-76f9-4c94-87d4-980977a72e13}</Project>
+      <Name>Repozytorium.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Repozytorium\Repozytorium.DAL.csproj">
       <Project>{B67F249F-83D1-4659-9AD5-CEF991DF2908}</Project>
       <Name>Repozytorium.DAL</Name>
